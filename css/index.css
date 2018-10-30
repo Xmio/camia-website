@@ -1,0 +1,185 @@
+.terms-modal .modal-header .modal-title {
+    color: black;
+}
+.terms-modal {
+     font-size: 14px;
+    font-weight: normal;
+    line-height: normal;
+    color: #969696;
+}
+.camia-nav .navbar-collapse.collapse.show {
+    background-color: rgba(234, 234, 234, 1);
+    text-align: center;
+}
+.camia-footer-card img {
+    width: 50px;
+    margin: 10px;
+}
+.camia-footer-links .text-right img {
+    height: 20px;
+    margin-right: 0px;
+}
+.camia-footer-logo {
+    height: 28px;
+    margin: 10px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.camia-footer-links {
+    padding-bottom: 40px;
+}
+.camia-footer-general {
+    padding-bottom: 20px;
+    border-bottom: solid;
+    border-width: thin;
+}
+.camia-footer .camia-footer-general label {
+    margin-left: 15px;
+}
+.camia-footer .camia-footer-general input {
+    border-radius: 20px;
+}
+.camia-footer .camia-footer-general a,
+.camia-footer .camia-footer-general a:hover,
+.camia-footer .camia-footer-general a:active {
+    color: #969696;
+}
+.camia-footer .camia-footer-general .col-3 div,
+.camia-footer .camia-footer-general .col-2 div,
+.camia-footer .camia-footer-general p {
+    margin-bottom: 10px;
+}
+.camia-footer .camia-footer-title {
+    font-size: 15px;
+    color: #ffffff;
+}
+.camia-footer {
+     background-color: #3b3b3b;
+  font-size: 14px;
+  color: #969696;
+  margin-top: 150px;
+}
+.form-group .form-control.camia-contact-msg {
+    height: 200px;
+}
+.contact-body-success {
+     display: none;
+}
+.contact-body-success img{
+     height: 150px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact-form label {
+     font-size: 13px;
+     font-weight: bold;
+     letter-spacing: 0.8px;
+     color: #000000;
+}
+.btn.contact-button {
+     width: 246px;
+     height: 52px;
+     border-radius: 26px;
+     background-color: #fc7c74;
+     box-shadow: 0 10px 20px 0 rgba(252, 124, 116, 0.5);
+     font-size: 16px;
+     font-weight: bold;
+     color: #ffffff;
+     border-color: #fc7c74;
+     cursor: pointer;
+     margin: auto;
+     display: -moz-box;
+    display: -webkit-box;
+}
+.form-control {
+     border-radius: .5rem;
+}
+.camia-general {
+    height: calc(100% - 500px);
+}
+.camia-general .dropdown-menu {
+	padding: 10px;
+}
+.camia-general .dropdown-item {
+     color: #969696;
+     padding: 10px;
+}
+.camia-general .dropdown-menu a:active{
+     color: #fc7c74;
+     background-color: #f8f9fa;
+}
+.camia-nav {
+	box-shadow: 0 2px 15px 0 rgba(117, 100, 100, 0.15);
+	width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+	height: 67px;
+	padding: 0px!important;
+	margin-bottom: 4px;
+    background-color: white;
+}
+.camia-content {
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+	height: -webkit-fill-available;
+}
+ .btn.subscribe-nav-button {
+     width: 246px;
+     height: 38px;
+     border-radius: 26px;
+     background-color: #fc7c74;
+     box-shadow: 0 10px 20px 0 rgba(252, 124, 116, 0.5);
+     font-size: 16px;
+     font-weight: bold;
+     color: #ffffff;
+     border-color: #fc7c74;
+     cursor: pointer;
+}
+.btn.subscribe-nav-button:active {
+    background-color: #d7665f;
+}
+ .camia-nabar-right {
+     width: 500px;
+     height: 40px;
+     border-radius: 26px;
+     border: solid 1px #dee1e6;
+     margin: 5px;
+     font-size: 14px;
+     font-weight: 600;
+     text-align: center;
+     color: #969696;
+}
+ .navbar-nav li{
+     white-space: nowrap;
+     padding-left: 22px;
+}
+ .navbar .navbar-nav .nav-item a:hover{
+     color:#fc7c74;
+}
+ .navbar-brand img {
+     height: 40px;
+     margin-left: 40px;
+}
+@media only screen and (max-width: 1000px) {
+    .camia-nabar-right {
+         margin: auto;
+        border: none;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .camia-nabar-right .nav-link {
+        display:none;
+    }
+    .camia-footer .camia-footer-general {
+        display:none;
+    }
+    .camia-info {
+        display:none;   
+    }
+}

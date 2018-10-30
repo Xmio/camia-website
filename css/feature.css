@@ -1,0 +1,31 @@
+.container .row .camia-features-box {
+    margin: auto;
+}
+.container .camia-features-imgs {
+    display: inline-table;
+}
+.container .camia-features-content {
+     padding: 80px;
+}
+.container .feature-topic {
+     margin-bottom: 30px;
+}
+.container .feature-topic-item img {
+     margin-bottom: 3px;
+    height: 20px; 
+}
+.container .feature-topic-item {
+    font-size: 14px;
+    color: #969696;
+    padding: 0px;
+}
+.container .camia-step1-cam {
+    height: 200px;
+    position: absolute;
+    margin-top: 220px;
+}
+.container .camia-step1-app {
+     position: static;
+     margin-left: -20px;
+}
+#loadFeatureOverlay{display: none;}

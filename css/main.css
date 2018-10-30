@@ -1,0 +1,217 @@
+.main-content .comum-camia-inline-table {
+    display: inline-table;
+}
+.main-content .comum-camia-blank .comum-specific-audio {
+    background: transparent;
+}
+.comum-specific-audio {
+    margin-top: 40px;
+}
+.comum-specific-audio .comum-subscribe-button {
+    height: 52px;
+    margin-top: 20px;
+}
+.comum-specific-audio .col-3 {
+    margin-left: 15%;
+    padding: 40px;
+}
+.comum-specific-audio .comum-camia-h2-subject-title {
+    margin:0;
+    margin-bottom: 20px;
+}
+.main-content .comum-camia-specific-content .comum-full-img {
+    width: 100%;
+    margin-top: 40px;
+    margin-top: 40px;
+    height: 40%;
+    min-height: 550px;
+    background: radial-gradient(transparent, transparent, black), url("./../assets/main-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right; 
+}
+.main-content .comum-camia-specific-content img{
+    width: 50%;
+    min-width: 300px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.main-content .comum-camia-specific-content {
+    background-color: #000000;
+    border-bottom-left-radius: 50% 70px;
+    border-bottom-right-radius: 50% 70px;
+    padding-bottom:40px;
+    width: auto;
+    margin-top: 100px;
+    z-index: 1;
+    position: relative;
+    color: #ffffff;
+}
+.main-content .comum-camia-specific-content .comum-camia-features .comum-camia-feature-description {
+    color: #ffffff;
+}
+.main-content .comum-camia-specific-content:after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    left: 0px;
+    right: 0px;
+    bottom: 100%;
+    background-color: transparent;
+    border-bottom-left-radius: 50% 70px;
+    border-bottom-right-radius: 50% 70px;
+    box-shadow: 0px 0px 0px 100px black;
+    clip: rect(0px, auto, 100px, 0px);
+}
+.comum-camia-features .comum-camia-h2-subject-title {
+    margin-bottom: 0px;
+}
+.comum-camia-features {
+         text-align: center;
+}
+.comum-camia-features .comum-camia-feature-description {
+     margin-top: 20px;
+     font-size: 16px;
+     font-weight: normal;
+     line-height: normal;
+     color: #969696;
+ }
+.box-inline.camia-app {
+     width: 400px;
+     padding-right: 50px;
+}
+.box-inline {
+     display:inline-block;
+     padding-right: 15px;
+     padding-left: 15px;
+}
+.comum-camia-features .camia-subject-title {
+     margin: auto;
+     margin-top: 120px;
+}
+.use-case img {
+     margin-top: 20px;
+     height: 50px;
+}
+.use-case h3 {
+     color:#fc7c74;
+     font-weight: 600;
+     margin-top: 10px;
+}
+.use-case p {
+  font-size: 14px;
+  color: #969696;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 60px;
+}
+.btn.use-case-button {
+     width: 130px;
+     height: 38px;
+     border-radius: 26px;
+     background-color: #fc7c74;
+     box-shadow: 0 10px 20px 0 rgba(252, 124, 116, 0.5);
+     font-size: 16px;
+     font-weight: bold;
+     color: #ffffff;
+     border-color: #fc7c74;
+     cursor: pointer;
+}
+.use-case {
+     padding: 20px;
+     height: 310px;
+     padding-bottom: 40px;
+     width: 100%;
+     max-width: 270px;
+     border-radius: 10px;
+     background-color: #ffffff;
+     box-shadow: 0 5px 15px 0 rgba(117, 100, 100, 0.25);
+     display:inline-block;
+     margin-right: 20px;
+     margin-bottom: 40px;
+     vertical-align: middle;
+     text-align: center;
+     cursor: pointer;
+}
+body{
+     font-family: 'Open Sans', sans-serif;
+     font-style: normal;
+     font-stretch: normal;
+     letter-spacing: normal;
+}
+.comum-camia-h2-subject-title {
+     font-size: 36px;
+     font-weight: 600;
+     margin: 80px;
+}
+.camia-top-main-box {
+     background-image: linear-gradient(to right, transparent 0%,transparent 40%, white 60%, white 100%, white 100%), url("./../assets/urso.jpg");
+     background-repeat: no-repeat;
+     background-size: contain;
+     height: 540px;
+     margin: 0px;
+     -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    padding: 4rem 2rem;
+        border-radius: .3rem;
+        margin-top:65px;
+}
+.camia-top-main-box .container {
+     -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(-1);
+}
+.content-title {
+     margin-top: 20px;
+     font-size: 48px;
+     font-weight: 600;
+     line-height: 1.2;
+     color: #333333;
+}
+ .content-subtitle{
+     margin-top: 20px;
+     font-size: 16px;
+     font-weight: normal;
+     line-height: normal;
+     color: #969696;
+}
+.btn.comum-subscribe-button {
+     width: 246px;
+     height: 52px;
+     border-radius: 26px;
+     background-color: #fc7c74;
+     box-shadow: 0 10px 20px 0 rgba(252, 124, 116, 0.5);
+     font-size: 16px;
+     font-weight: bold;
+     color: #ffffff;
+     border-color: #fc7c74;
+     cursor: pointer;
+     margin-top: 20px;
+}
+.btn.comum-subscribe-button:active {
+    background-color: #d7665f;
+}
+@media only screen and (max-width: 1000px) {
+    .main-content .comum-camia-specific-content .comum-full-img {
+        min-height: 400px;
+        height: 30%;
+    }
+    .main-content .camia-top-main-box {
+         background-image: none;
+         text-align: center;
+         height: 30%;
+    }
+    .comum-camia-h2-subject-title {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .main-content .comum-camia-specific-content .comum-full-img {
+        min-height: 300px;
+    }
+}
+#loadOverlay{display: none;}

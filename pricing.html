@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <link href="css/pricing.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+      <meta charset="UTF-8">
+   </head>
+   <body>
+      <div class="container camia-top-pricing-box">
+         <div>
+            <h1 class="pricing-top-title">Proteja quem você ama a partir de R$ 24/mês</h1>
+            <p class="pricing-subtitle">Satisfação garantida ou seu dinheiro de volta.</p>
+         </div>
+         <div class="row pricing-content">
+            <div class="general-box">
+               <div>
+                  <div class="pricing-topic">De quantas camêras você precisa?</div>
+                  <div class="box-collection text-center">
+                     <div class="cam-box cam-volume">
+                        <div class="cam-description"><span class="camia-vol">1</span> câmera</div>
+                        <img class="one-cam" src="./assets/one-cam.png">
+                        <div class="cam-value">R$ <strong class="camia-val">24</strong>/mês</div>
+                     </div>
+                     <div class="cam-box cam-volume selected">
+                        <div class="recomendation">MAIS VENDIDO</div>
+                        <div class="cam-description"><span class="camia-vol">3</span> câmeras</div>
+                        <img class="three-cam" src="./assets/three-cams.png">
+                        <div class="original-value">R$ 72/mês</div>
+                        <div class="cam-value recomendation-value">R$ <strong class="camia-val">59</strong>/mês</div>
+                        <div class="desc-recomendation">Menos que um cafezinho por dia</div>
+                     </div>
+                     <div class="cam-box cam-volume">
+                        <div class="cam-description"><span class="camia-vol">5</span> câmeras</div>
+                        <img class="five-cam" src="./assets/five-cams.png">
+                        <div class="original-value">R$ 120/mês</div>
+                        <div class="cam-value">R$ <strong class="camia-val">89</strong>/mês</div>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="pricing-topic">Quanto tempo de armazenamento?</div>
+                  <div class="box-collection text-center">
+                     <div class="cam-box cam-storage">
+                        <div class="cam-description"><span class="camia-vol d-none">0</span>Ao vivo</div>
+                        <div class="cam-value">R$ <strong class="camia-val">0</strong></div>
+                     </div>
+                     <div class="cam-box cam-storage">
+                        <div class="cam-description"><span class="camia-vol">1</span> dia</div>
+                        <div class="cam-value">R$ <strong class="camia-val">5</strong></div>
+                     </div>
+                     <div class="cam-box cam-storage selected">
+                        <div class="recomendation">MAIS VENDIDO</div>
+                        <div class="cam-description"><span class="camia-vol">3</span> dias</div>
+                        <div class="cam-value recomendation-value">R$ <strong class="camia-val">9</strong> /câmera/mês</div>
+                     </div>
+                     <div class="cam-box cam-storage">
+                        <div class="cam-description"><span class="camia-vol">7</span> dias</div>
+                        <div class="cam-value">R$ <strong class="camia-val">15</strong> /câmera/mês</div>
+                     </div>
+                  </div>
+               </div>
+                  <div class="pricing-topic">Dados de entrega</div>
+                     <div class="subscription-form payment-box">
+                        <div class="row">
+                              <div class="billing-card-info">
+                                 <label for="">CEP</label>
+                                 <input class="form-control customer-cep" maxlength="9">
+                              </div>
+                              <div class="billing-card-info">
+                                 <label for="">CIDADE</label>
+                                 <input type="text" class="form-control customer-city">
+                              </div>
+                        </div>
+                        <div class="row">
+                           <div class="billing-card-info camia-addres">
+                              <label for="">LOGRADOURO</label>
+                              <input type="text" class="form-control customer-lograd">
+                           </div>
+                           <div class="billing-card-info">
+                              <label for="">NÚMERO</label>
+                              <input type="text" class="form-control customer-number" size="10">
+                           </div>
+                        </div>
+                     </div>
+               <div class="billing-description">
+                  <div class="abstract-billing">Resumo da compra</div>
+                  <div class="billing-content">
+                     <div class="billing-details">
+                        <div class="billing-label"><span class="abstract-cam-vol">3</span> câmeras </div>
+                        <div class="billing-value">R$ <span class="abstract-cam-val">59</span>/mês</div>
+                     </div>
+                     <div class="billing-details">
+                        <div class="billing-label"><span class="abstract-storage-vol">3</span> dias armazenamento </div>
+                        <div class="billing-value">R$ <span class="abstract-storage-val">27</span>/mês</div>
+                     </div>
+                     <div class="billing-details camia-frete">
+                        <div class="billing-label">Frete (<span class="abstract-days">0</span> dias úteis)</div>
+                        <div class="billing-value">R$ <span class="abstract-shipping-val">0</span></div>
+                     </div>
+                     <div class="billing-total">
+                        <strong>
+                           <div class="billing-label">Total </div>
+                           <div class="billing-value">R$ <span class="abstract-total-val">86</span>/mês</div>
+                        </strong>
+                     </div>
+                  </div>
+               </div>
+               <div class="subscription-form form-group">
+                  <form id="payment-form">
+                     <div class="pricing-topic">Dados de pagamento</div>
+                     <div class="payment-box">
+                        <div class="row">
+                           <div class="billing-card-info">
+                              <label for="">NÚMERO DO CARTÃO</label>
+                              <input type="text" class="form-control camia-card-number customer-card-number">
+                           </div>
+                           <div class="billing-card-info">
+                              <label for="">CVC</label>
+                              <input type="text" class="form-control customer-card-cvv" maxlength="4" size="4">
+                           </div>
+                           <div class="billing-card-info">
+                              <img class="card-brand" src=""></img>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="billing-card-info camia-larg-size">
+                              <label for="">NOME DO TITULAR DO CARTÃO</label>
+                              <input type="text" class="customer-name form-control">
+                           </div>
+                        </div>
+                        <div>
+                           <label for="">DATA DE EXPIRAÇÃO</label>
+                           <div class="row">
+                              <div class="billing-card-info camia-date">
+                                 <select class="form-control customer-card-month">
+                                    <option value="01">Janeiro</option>
+                                    <option value="02">Fevereiro </option>
+                                    <option value="03">Março</option>
+                                    <option value="04">April</option>
+                                    <option value="05">Maio</option>
+                                    <option value="06">Junho</option>
+                                    <option value="07">Julho</option>
+                                    <option value="08">Agosto</option>
+                                    <option value="09">Septembro</option>
+                                    <option value="10">Outubro</option>
+                                    <option value="11">Novembro</option>
+                                    <option value="12">Dezembro</option>
+                                 </select>
+                              </div>
+                              <div class="billing-card-info camia-date">
+                                 <select class="form-control customer-card-year">
+                                    <option value="18"> 2018</option>
+                                    <option value="19"> 2019</option>
+                                    <option value="20"> 2020</option>
+                                    <option value="21"> 2021</option>
+                                    <option value="22"> 2022</option>
+                                    <option value="23"> 2023</option>
+                                    <option value="24"> 2024</option>
+                                    <option value="25"> 2025</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="billing-second-step">
+                        <div class="pricing-topic">Dados para o faturamento</div>
+                        <div class="payment-box">
+                           <div class="row">
+                              <div class="billing-card-info camia-larg-size">
+                                 <label for="">NOME</label>
+                                 <input type="text" class="form-control billing-name">
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="billing-card-info camia-larg-size">
+                                 <label for="">E-MAIL</label>
+                                 <input type="text" class="customer-mail form-control">
+                              </div>
+                           </div>
+                              <div class="row">
+                                 <div class="billing-card-info">
+                                    <label for="">DOCUMENTO</label>
+                                    <input type="number" class="form-control billing-cpfcnpj" size="20"  maxlength="18" placeholder="CPF/CNPJ">
+                                 </div>
+                                 <div class="billing-card-info">
+                                    <label for="">TELEFONE</label>
+                                    <input type="number" class="form-control billing-phone" maxlength="11"size="20">
+                                 </div>
+                              </div>
+                              <div class="row">
+                                    <div class="billing-card-info">
+                                       <label for="">CEP</label>
+                                       <input class="form-control billing-cep" maxlength="9">
+                                    </div>
+                                    <div class="billing-card-info">
+                                       <label for="">CIDADE</label>
+                                       <input type="text" class="form-control billing-city">
+                                    </div>
+                              </div>
+                              <div class="row">
+                                 <div class="billing-card-info camia-addres">
+                                    <label for="">LOGRADOURO</label>
+                                    <input type="text" class="form-control billing-lograd">
+                                 </div>
+                                 <div class="billing-card-info">
+                                    <label for="">NÚMERO</label>
+                                    <input type="text" class="form-control billing-number" size="10">
+                                 </div>
+                              </div>
+                        </div>
+                     </div>
+
+                     <button class="btn subscribe-button" type="submit" >Confirmar sua compra</button>
+                     <p class="usage-term">Clicando em confirmar compra você estará aceitando nossos <u><a href="#usageTerm" data-toggle="modal" data-target="#usageTerm">termos de uso</a></u></p>
+                  </form>
+               </div>
+            </div>
+            <div class="general-box testimonial">
+               <div>
+                  <img src="./assets/leticia.png">
+                  <span class="testimonial-title">As melhores câmeras! recomendo!</span>
+                  <p>A gente tinha bastante problemas e resolveu colocar câmeras. Não sei se isso intimidou, mas diminuíram os roubos. Estamos super satisfeitos, não teve burocracia na contratação e a instalação fui eu mesma que fiz.</p>
+               </div>
+               <div>
+                  <img src="./assets/fernanda.png">
+                  <span class="testimonial-title">Melhor que a expectativa</span>
+                  <p>Um estranho decidiu invadir nossa casa umas duas semanas após nos mudarmos. Eu estava a uma hora de distancia de casa vendo tudo acontecer graças a um alerta que recebia pelo app da Camia. Liguei para a polícia que respondeu rapidamente. Eu assisti a policia apreender o suspeito através das câmeras. Obrigado Camia!</p>
+               </div>
+               <div>
+                  <img src="./assets/paulo.png">
+                  <span class="testimonial-title">Big Brother dos meus dogs 24 horas! Ótimo!</span>
+                  <p>Quando assinei a Camia  eu queria acompanhar o que meus cachorros faziam em casa. O que me surpreendeu foi a qualidade da imagem tanto de dia como a noite. Eu também adoro poder ouvir e falar através da câmera, principalmente quando eles estão aprontando.</p>
+               </div>
+            </div>
+         </div>
+         <!-- Termos uso -->
+         <div class="modal fade bd-example-modal-lg contact-modal" id="usageTerm" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+           <div class="modal-dialog modal-lg" role="document">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title">Termos de uso</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                 </button>
+               </div>
+               <div class="modal-body">
+                 <div class="usage-term-content">
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <!-- Termos Modal -->  
+         <div class="loader"></div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="https://assets.pagar.me/pagarme-js/3.0/pagarme.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <script src="./js/card.js"></script>
+      <script src="./js/pricing.js"></script>
+   </body>
+</html>

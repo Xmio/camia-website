@@ -1,0 +1,160 @@
+.general-container .container-how-to-second {
+    background-color: #f4f4f4;
+    padding-bottom: 20px;
+    margin-top: -50px!important;
+    padding-top: 70px!important;
+}
+.general-container .general-img-satisfaction {
+    height: 400px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.general-simple {
+    margin-top: 100px;
+}
+.general-container .subscribe-button {
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 0;
+}
+.box-how-to-pricing {
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px 0 rgba(117, 100, 100, 0.25);
+    display: inline-block;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+    margin: 20px;
+    margin-top: 80px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.general-container .general-how-to{
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+}
+.general-container .general-how-to .general-how-to-img1{
+    height: 450px;
+    margin: auto;
+    padding-left: 30px;
+}
+.general-container .how-time-to-record{
+    font-size: 28px;
+    font-weight: bold;
+    color: #969696;
+    margin-top: 86px;
+}
+.general-container .img-how-2 {
+    height: 50px;
+    margin-top: 120px;
+}
+.general-container .img-how-1 {
+    height: 180px;
+    margin: 20px;
+}
+.general-container .img-how-3 {
+    height: 170px;
+    margin-top: 30px;
+}
+.general-container .general-how-to-desc {
+    color: #333333;
+    margin: auto;
+    font-size: 15px;
+  font-weight: 600;
+}
+.general-container .how-to-number {
+    color: white;
+    margin: auto;
+    font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(51, 51, 51, 0.3);
+    border-radius: 25px;
+    padding: 11px;
+    width: 50px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.general-container {
+    font-family: 'Open Sans', sans-serif;
+     font-style: normal;
+     font-stretch: normal;
+     letter-spacing: normal;
+     font-size: 14px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+.general-container .general-satisfaction {
+    margin-top: 40px;
+  color: #969696;
+}
+.container-satisfaction .general-satisfaction img {
+    height: 130px;
+}
+.container-satisfaction .general-satisfaction p {
+font-weight: 600;
+color: #333333;
+margin-bottom: 5px;
+}
+.general-container .container-recomendation .recomended-name {
+    margin-top: 10px;
+    color: #fc7c74;
+}
+.container-satisfaction h2 {
+    margin-top: 80px;
+}
+.general-container .general-satisfaction-obs {
+        width: 200px;
+    margin: auto;
+}
+.general-container .container-recomendation,
+.general-container .container-how-to {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.general-container .container-recomendation h5{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+  font-weight: 600;
+  color: #333333;
+}
+.general-container .container-recomendation img {
+    height: 100px;
+}
+@media only screen and (max-width: 980px) {
+    .general-satisfaction .col-lg-1 {
+        display: none;
+    }
+    .general-container .general-how-to .general-how-to-img1{
+        height: 350px;
+        padding-left: 0;
+    }
+    .general-container .general-img-satisfaction {
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .general-container .general-how-to{
+        margin-top: 0px
+    }
+    .general-container .general-how-to .general-how-to-img1{
+        height: 300px;
+        padding-left: 0;
+        content:url("./../assets/mb-cam-details.png");
+    }
+    .general-container .general-img-satisfaction {
+        height: 200px;
+    }
+    .general-container .container-how-to-second {
+        padding-top: 0px!important;
+    }
+}
+#loadGeneralOverlay{display: none;}

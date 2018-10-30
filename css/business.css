@@ -1,0 +1,53 @@
+.camia-top-business-box {
+     background-image: linear-gradient(to left,transparent 0%,transparent 40%, white 60%, white 100%, white 100%), url("./../assets/bg-business.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 540px;
+     margin: 0px;
+    padding: 4rem 2rem;
+        border-radius: .3rem;
+        background-position: right;
+        margin-top:65px;
+}
+.content-title {
+     margin-top: 20px;
+     font-size: 48px;
+     font-weight: 600;
+     line-height: 1.2;
+     color: #333333;
+}
+ .content-subtitle{
+     margin-top: 20px;
+     font-size: 16px;
+     font-weight: normal;
+     line-height: normal;
+     color: #969696;
+}
+.btn.subscribe-button {
+     width: 246px;
+     height: 52px;
+     border-radius: 26px;
+     background-color: #fc7c74;
+     box-shadow: 0 10px 20px 0 rgba(252, 124, 116, 0.5);
+     font-size: 16px;
+     font-weight: bold;
+     color: #ffffff;
+     border-color: #fc7c74;
+     cursor: pointer;
+     margin-top: 20px;
+}
+.btn.subscribe-button:active {
+    background-color: #d7665f;
+}
+.camia-subject-title {
+     font-size: 36px;
+     font-weight: 600;
+     margin-top: 80px;
+}
+@media only screen and (max-width: 1000px) {
+    .camia-top-business-box {
+         background-image: none;
+         text-align: center;
+         height: 30%;
+    }
+}

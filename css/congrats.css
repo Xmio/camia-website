@@ -1,0 +1,23 @@
+.container .main-congrats-container {
+	margin: auto;
+    width: 630px;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+.container .main-congrats-container h2{
+	font-size: 50px;
+    color: #3ccf8e;
+}
+.container .main-congrats-container h4{
+	font-size: 29px;
+}
+.container .main-congrats-container img{
+    width: 80px;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.container .main-congrats-container p{
+    color: #969696;
+    margin-top: 20px;
+}
