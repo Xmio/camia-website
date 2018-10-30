@@ -1,6 +1,6 @@
-$('#camia-feature-content').load( "./feature.html", loadGeneralContent());
+$('#camia-feature-content').load( "./src/feature.html", loadGeneralContent());
 function loadGeneralContent() {
-	$('#main-general-content').load( "./general.html");
+	$('#main-general-content').load( "./src/general.html");
 }
 $('.use-case-family').click(function(){
     useCaseFamily();

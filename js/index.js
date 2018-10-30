@@ -1,65 +1,65 @@
 var uc=getUrlParameter('uc');
 switch (uc) {
     case "family":
-        $('#camia-family-content').load("./family.html",startWithFamily());
+        $('#camia-family-content').load("./src/family.html",startWithFamily());
         break;
     case "pets":
-        $('#camia-pets-content').load("./pets.html",startWithPets());
+        $('#camia-pets-content').load("./src/pets.html",startWithPets());
         break;
     case "home":
-        $('#camia-home-content').load("./home.html",startWithHome());
+        $('#camia-home-content').load("./src/home.html",startWithHome());
         break;
     case "business":
-        $('#camia-business-content').load("./business.html", startWithBusiness());
+        $('#camia-business-content').load("./src/business.html", startWithBusiness());
         break;
     default:
-        $('#camia-main-content' ).load("./main.html", startWithMain());
+        $('#camia-main-content' ).load("./src/main.html", startWithMain());
     mixpanel.track("New visitor", {"uc": uc});
 } 
 function startWithFamily() {
   useCaseFamily();
-  $('#camia-main-content' ).load("./main.html");
-  $('#camia-business-content').load("./business.html");
-  $('#camia-pets-content').load("./pets.html");
-  $('#camia-home-content').load("./home.html");
-  $('#camia-congrats-content').load("./congrats.html");
-  $('#camia-pricing-content').load("./pricing.html");
+  $('#camia-main-content' ).load("./src/main.html");
+  $('#camia-business-content').load("./src/business.html");
+  $('#camia-pets-content').load("./src/pets.html");
+  $('#camia-home-content').load("./src/home.html");
+  $('#camia-congrats-content').load("./src/congrats.html");
+  $('#camia-pricing-content').load("./src/pricing.html");
 }
 function startWithPets() {
   useCasePets();
-  $('#camia-main-content' ).load("./main.html");
-  $('#camia-business-content').load("./business.html");
-  $('#camia-family-content').load("./family.html");
-  $('#camia-home-content').load("./home.html");
-  $('#camia-congrats-content').load("./congrats.html");
-  $('#camia-pricing-content').load("./pricing.html");
+  $('#camia-main-content' ).load("./src/main.html");
+  $('#camia-business-content').load("./src/business.html");
+  $('#camia-family-content').load("./src/family.html");
+  $('#camia-home-content').load("./src/home.html");
+  $('#camia-congrats-content').load("./src/congrats.html");
+  $('#camia-pricing-content').load("./src/pricing.html");
 }
 function startWithHome() {
   useCaseHome();
-  $('#camia-main-content' ).load("./main.html");
-  $('#camia-business-content').load("./business.html");
-  $('#camia-pets-content').load("./pets.html");
-  $('#camia-family-content').load("./family.html");
-  $('#camia-congrats-content').load("./congrats.html");
-  $('#camia-pricing-content').load("./pricing.html");
+  $('#camia-main-content' ).load("./src/main.html");
+  $('#camia-business-content').load("./src/business.html");
+  $('#camia-pets-content').load("./src/pets.html");
+  $('#camia-family-content').load("./src/family.html");
+  $('#camia-congrats-content').load("./src/congrats.html");
+  $('#camia-pricing-content').load("./src/pricing.html");
 }
 function startWithBusiness() {
   useCaseBusiness();
-  $('#camia-main-content' ).load("./main.html");
-  $('#camia-pets-content').load("./pets.html");
-  $('#camia-home-content').load("./home.html");
-  $('#camia-family-content').load("./family.html");
-  $('#camia-congrats-content').load("./congrats.html");
-  $('#camia-pricing-content').load("./pricing.html");
+  $('#camia-main-content' ).load("./src/main.html");
+  $('#camia-pets-content').load("./src/pets.html");
+  $('#camia-home-content').load("./src/home.html");
+  $('#camia-family-content').load("./src/family.html");
+  $('#camia-congrats-content').load("./src/congrats.html");
+  $('#camia-pricing-content').load("./src/pricing.html");
 }
 function startWithMain() {
   showMain();
-  $('#camia-business-content').load("./business.html");
-  $('#camia-family-content').load("./family.html");
-  $('#camia-pets-content').load("./pets.html");
-  $('#camia-home-content').load("./home.html");
-  $('#camia-congrats-content').load("./congrats.html");
-  $('#camia-pricing-content').load("./pricing.html");
+  $('#camia-business-content').load("./src/business.html");
+  $('#camia-family-content').load("./src/family.html");
+  $('#camia-pets-content').load("./src/pets.html");
+  $('#camia-home-content').load("./src/home.html");
+  $('#camia-congrats-content').load("./src/congrats.html");
+  $('#camia-pricing-content').load("./src/pricing.html");
 }
 function useCaseFamily() {
     mixpanel.track("Family page view", {"uc": uc});
@@ -123,6 +123,6 @@ function getUrlParameter(sParam) {
             return sParameterName[1] === undefined ? true : sParameterName[1];
     }
 };
-$('.usage-term-content').load("./terms.html");
-$('.privacy-police').load("./privacy.html");
+$('.usage-term-content').load("./src/terms.html");
+$('.privacy-police').load("./src/privacy.html");
 $('#navbarDropdown').click().click();

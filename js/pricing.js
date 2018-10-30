@@ -18,7 +18,7 @@ var neighborhood = "";
 var billingState="";
 var billingNeighborhood = "";
 
-$('.usage-term-content').load("./terms.html");
+$('.usage-term-content').load("./src/terms.html");
 
 $('#payment-form').submit(function(e) {
   $(".loader").show();

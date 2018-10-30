@@ -4,5 +4,5 @@ $('.subscribe-button').click(function(){
 $('.comum-subscribe-button').click(function(){
     showPricing();
 });
-$('#pets-feature-content').load("./feature.html");
-$('#pets-general-content').load("./general.html");
+$('#pets-feature-content').load("./src/feature.html");
+$('#pets-general-content').load("./src/general.html");

@@ -4,5 +4,5 @@ $('.subscribe-button').click(function(){
 $('.comum-subscribe-button').click(function(){
     showPricing();
 });
-$('#home-feature-content').load( "./feature.html");
-$('#home-general-content').load( "./general.html");
+$('#home-feature-content').load( "./src/feature.html");
+$('#home-general-content').load( "./src/general.html");
