@@ -1,213 +1,347 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-      <meta name="description" content="Câmera de segurança para casa. Câmera para pet. Câmera para familia. Câmera para empresa. Camia é a câmera por assinatura inteligente, fácil de instalar e que grava tudo em nuvem">
-      <meta name="keywords" content="camia, câmera de segurança para casa, câmera para pet, câmera para familia, câmera para empresa, câmera inteligente">
-      <meta name="author" content="Camia">
-      <meta name="language" content="pt_br">
-      <meta name="author" content="Camia">
-      <meta name="title" content="Camia | Proteja quem você ama a partir de R$ 24/mês">
-      <meta property="og:type" content="website">
-      <meta property="og:site_name" content="Camia">
-      <meta property="og:locality" content="São Paulo, Rio de Janeiro, Joinville, Porto Alegre, Florianópolis, Campo Grande, Palmas, Manaus, Maceió, Natal, Curitiba, Salvador, Goiânia, Recife, Vitória">
-      <meta property="og:country-name" content="Brazil">
-      <meta property="og:region" content="Joinville">
-      <link rel="canonical" href="http://camia.com.br/">
-      <meta name="referrer" content="always">
-      <meta charset="UTF-8">
-      <link rel="icon" type="image/png" href="./assets/logo-icon.ico">
-      <meta content="Camia | Proteja quem você ama a partir de R$ 24/mês" property="og:title">
-      <meta content="Camia | Proteja quem você ama a partir de R$ 24/mês" property="og:description">
-      <meta content="Camia | Proteja quem você ama a partir de R$ 24/mês" name="description">
-      <meta content="website" property="og:type">
-      <title>Camia | Proteja quem você ama a partir de R$ 24/mês</title>
-      <link href="css/index.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i" rel="stylesheet">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127787027-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<!doctype html>
+<html lang="en">
 
-        gtag('config', 'UA-127787027-1');
-      </script>
-      <!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
-        0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-        for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
-        mixpanel.init("fc4cb7156283c86bf78f22a989685bd8");</script>
-      <!-- end Mixpanel -->
-   </head>
-   <body class="camia-body" style="display: none;">
-      <div class="loading-modal"></div>
-      <div class="camia-general">
-      <!-- Start Navegation bar -->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top camia-nav">
-        <a class="navbar-brand" href="#"><img src="./assets/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--link rel="icon" href="../../../../favicon.ico"-->
+
+    <title>Camia</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-camia">
+            <div class="container">
+                <a href="#">
+                    <img src="img/logo-topo.png" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Para
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item camia-home" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Segurança da casa</a>
-                <a class="dropdown-item camia-pets" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Monitoramento de pets</a>
-                <a class="dropdown-item camia-family" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Famílias</a>
-                <a class="dropdown-item camia-business" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Segurança da empresa</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link price-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Preços</a>
-            </li>
-          </ul>
-          <div class="camia-nabar-right">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link login" target="_blank" href="https://zaratine.camerite.com/login">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contactModal" data-toggle="modal" data-target="#contactModal">Entre em contato</a>
-              </li>
-            
-              <li class="nav-item">
-                <button data-toggle="collapse" data-target=".navbar-collapse.show" class="btn subscribe-nav-button price-link" type="submit">Simule seu plano agora</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- End Navegation bar -->
-      <!-- Start Contact Modal -->
-      <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="contact-body-content">
-                <form id="contact-form">
-                  <div class="form-group contact-form">
-                    <label for="recipient-name" class="col-form-label">E-MAIL</label>
-                    <input type="text" class="form-control camia-contact-email" placeholder="Digite o seu email aqui">
-                  </div>
-                  <div class="form-group contact-form">
-                    <label for="message-text" class="col-form-label">MENSAGEM</label>
-                    <textarea class="form-control camia-contact-msg" placeholder="Digite a sua mensagem aqui"></textarea>
-                  </div>
-                  <button type="button" class="btn contact-button" type="submit" >Enviar mensagem</button>
-                </form>
-              </div>
-              <div class="contact-body-success">
-                <img src="./assets/success-contact.png">
-              </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                    <ul class="navbar-nav mr-auto">
+                      <!--li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Para
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Sua Casa</a>
+                          <a class="dropdown-item" href="#">Seu Família</a>
+                          <a class="dropdown-item" href="#">Sua Pet</a>
+                        </div>
+                      </li-->
+                    </ul>
+
+                    <form class="form-inline mt-2 mt-md-0">
+                        <a class="btn btn-outline-secondary" role="button" href="#">Dúvidas?</a>
+                        <a class="btn btn-outline-secondary" role="button" href="#">Login</a>
+                        <a class="btn btn-primary" role="button" href="#">Simule seu plano agora</a>
+                    </form>
+                </div>
             </div>
-          </div>
+        </nav>
+    </header>
+
+    <main role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h1 class="display-3">Mais perto do que ama,<br/>você fica em paz</h1>
+                        <!--h1 class="display-3">Camia te aproxima do que você ama,<br/>para você ficar tranquilo.</h1-->
+                        <p>Camia é uma câmera inteligente por assinatura, wi-fi e fácil de instalar, que grava tudo na nuvem e te notifica sempre que identificar um movimento.</p>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Simule seu plano agora</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- End Contact Modal -->
-      <!-- Start Content Modal -->
-      <div id="camia-main-content" style="display: none;"></div>
-      <div id="camia-pricing-content" style="display: none;"></div>
-      <div id="camia-congrats-content" style="display: none;"></div>
-      <div id="camia-business-content" style="display: none;"></div>
-      <div id="camia-pets-content" style="display: none;"></div>
-      <div id="camia-home-content" style="display: none;"></div>
-      <div id="camia-family-content" style="display: none;"></div>
-      <!-- End Content Modal -->
-      <!-- Termos uso -->
-         <div class="modal fade bd-example-modal-lg terms-modal" id="indexUsageTerm" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
-           <div class="modal-dialog modal-lg" role="document">
-             <div class="modal-content">
-               <div class="modal-header">
-                 <h5 class="modal-title">Termos de uso</h5>
-                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                   <span aria-hidden="true">&times;</span>
-                 </button>
-               </div>
-               <div class="modal-body">
-                 <div class="usage-term-content">
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-      <!-- Termos Modal -->  
-      <!-- Termos uso -->
-         <div class="modal fade bd-example-modal-lg terms-modal" id="privacyPolice" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
-           <div class="modal-dialog modal-lg" role="document">
-             <div class="modal-content">
-               <div class="modal-header">
-                 <h5 class="modal-title">Política de Privacidade</h5>
-                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                   <span aria-hidden="true">&times;</span>
-                 </button>
-               </div>
-               <div class="modal-body">
-                 <div class="privacy-police">
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-      <!-- Termos Modal -->  
-      <!-- Start Footer Modal -->
-      <footer class="page-footer font-small blue pt-4 camia-footer">
-        <div class="container text-center text-md-left">
-          <div class="row camia-footer-general">
-              <div class="col-3">
-                <p class="camia-footer-title">Camia para</p>
-                <div><a class="camia-home" href="#">Para segurança da sua casa</a></div>
-                <div><a class="camia-family" href="#">Para estar perto da sua família</a></div>
-                <div><a class="camia-pets" href="#">Para estar perto dos seus pets</a></div>
-                <div><a class="camia-business" href="#">Para segurança da sua empresa</a></div>
-              </div>
-              <div class="col-2">
-                <p class="camia-footer-title">Empresa</p>
-                <div><a href="#indexUsageTerm" data-toggle="modal" data-target="#indexUsageTerm">Termos de uso</a></div>
-                <div><a href="#privacyPolice" data-toggle="modal" data-target="#privacyPolice">Política de privacidade</a></div>
-                <div><a href="#contactModal" data-toggle="modal" data-target="#contactModal">Entre em contato</a></div>
-                <p class="camia-footer-title">Atendimento</p>
-                <div><span>suporte@camia.com.br</span></div>
-              </div>
-              <div class="col-4">
-                <label class="camia-footer-title">Inscreva-se e receba nossas novidades</label>
-                <input type="text" class="form-control camia-contact-email" placeholder="Qual o seu email?">
-              </div>
-              <div class="col-3 camia-footer-card">
-                <img src="./assets/footer-visa.png">
-                <img src="./assets/footer-mastercard.png">
-                <img src="./assets/footer-diners.png">
-                <img src="./assets/footer-rede.png">
-                <img src="./assets/footer-amex.png">
-                <img src="./assets/footer-hipercard.png">
-              </div>
-          </div>
-          <div class="camia-footer-links">
+
+
+        <!-- Marketing messaging and featurettes
+      ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+         <div class="container marketing">
             <div class="row">
-            <div class="col-6">
-              <strong>camia</strong><img class="camia-footer-logo" src="./assets/logo-icon.png">
+                <div class="col center">
+                    <h2 class="text-center first-header">Para tudo que importa, você tem Camia</h2>
+                </div>
             </div>
-            <div class="col-6 text-right">
-              <span class="camia-info">Joinville SC - 31.691.277/0001-31</span>
-              <img class="camia-footer-logo" src="./assets/fb.png">
-              <img class="camia-footer-logo" src="./assets/ig.png">
-              <img class="camia-footer-logo" src="./assets/tw.png">
+            <div class="row use-cases">
+                <div class="col-lg-4">
+                    <div class="use-case">
+                        <img src="img/icon-home.svg">
+                        <h3>Casa</h3>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <p><a class="btn btn-outline-secondary" href="#" role="button">Saiba mais &raquo;</a></p>
+                    </div>
+                </div>
+                <!-- /.col-lg-3 -->
+                <div class="col-lg-4">
+                    <div class="use-case">
+                        <img src="img/icon-family.svg">
+                        <h3>Família</h3>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <p><a class="btn btn-outline-secondary" href="#" role="button">Saiba mais &raquo;</a></p>
+                    </div>
+                </div>
+                <!-- /.col-lg-3 -->
+                <div class="col-lg-4">
+                    <div class="use-case">
+                        <img src="img/icon-pets.svg">
+                        <h3>Pets</h3>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <p><a class="btn btn-outline-secondary" href="#" role="button">Saiba mais &raquo;</a></p>
+                    </div>
+                </div>
             </div>
-          </div>
-          </div>
-      </div>
-      </footer>
-      <!-- End Footer Modal -->
-   </div>
-   </body>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-   <script src="./js/index.js"></script>
-   <script src="./js/contact.js"></script>
+        </div>
+       
+
+
+        <div class="container marketing featurette">
+            <div class="row">
+                <div class="col center">
+                    <h2 class="text-center">Acompanhe ao vivo ou assista a até 7 dias de gravação</h2>
+                      <p class="subtitle">Assista ao vivo ou então gravação de até 7 dias.Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                      <img src="img/device-familia-min.png" srcset="img/device-familia@2x-min.png 2x" class="device">
+                      
+                </div>
+
+            </div>
+        </div> 
+        
+
+        <div class="featurette-dark"> 
+            <div class="container marketing featurette">
+                <div class="row">
+                    <div class="col center">
+                        <h2 class="text-center">Enxergue o que acontece quando as luzes se apagam</h2>
+                          <p class="subtitle">Assista ao vivo ou então gravação de até 7 dias.Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                          <img src="img/ladrao-noite.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container marketing featurette">
+            <div class="row">
+                <div class="col center">
+                    <h2 class="text-center">Seja avisado sempre que a câmera detectar um movimento</h2>
+                      <p class="subtitle">Assista ao vivo ou então gravação de até 7 dias.Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                      <img src="img/ladrao_notify.png">
+                </div>
+            </div>
+        </div>
+        
+        <!--hr class="container"-->
+
+        <div class="container marketing featurette sound">
+        
+            <div class="row">
+                <div class="col center">
+                    <h2 class="text-center">Fale com quem estiver do outro lado</h2>
+                      <p class="subtitle">Assista ao vivo ou então gravação de até 7 dias.Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                      <img src="img/sound.png" srcset="img/sound@2x.png 2x, img/sound@3x.png 3x" class="device">
+                </div>
+            </div>
+        </div>
+
+        <div class="marketing featurette simple">
+            <div class="row">
+                <div class="col center">
+                    <h2 class="text-center">Simples como tem que ser</h2>
+                      <!--p class="text-center">Assista ao vivo ou então gravação de até 7 dias.Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p-->
+                      <img src="img/simples_2.png" class="simples">          
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="row steps">
+                    <div class="col">
+                        <ul class="progressbar">
+                            <li>Escolha a quantidade de câmeras</li>
+                            <li>Escolha a duração das gravações</li>
+                            <li>Receba as câmeras em casa</li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+            <div style="font-size: 15pt; margin-top: 80px; color: black;">Satisfação garantida em 30 dias ou seu dinheiro de volta. <span style="text-decoration: line-through;">Sem letras miúdas.</span></div>
+        </div>
+
+         <div class="row cta cta-red">
+            <div class="col">
+                <h3>Comece agora mesmo a partir R$ 24/mês com a câmera inclusa</h3>                
+                <a class="btn btn-primary-2 btn-lg" role="button" href="#">Simule seu plano agora</a>
+            </div>
+        </div>
+
+        <!--div class="steps-container">
+            <div class="container marketing">
+                <div class="row steps">
+                    <div class="col-lg-3 step">
+                        <h4>Passo 1</h4>
+                        <p>Escolha a quantidade de câmeras</p>
+                    </div>
+                    <div class="col-lg-3 step">
+                        <h4>Passo 2</h4>
+                        <p>Escolha quantos dias de gravação</p>
+                    </div>
+                    <div class="col-lg-3 step">
+                        <h4>Passo 3</h4>
+                        <p>Receba as câmeras em casa e instale você mesmo</p>
+                    </div>
+                    <div class="col-lg-3 step">
+                        <p>Tudo isso a partir de R$ 24/mês com a câmera inclusa</p>
+                        <a class="btn btn-primary" role="button" href="#">Simule seu plano agora</a>
+                    </div>
+                </div>
+                <!--div class="row cta">
+                    <div class="col">
+                        <h3>Tudo isso a partir de R$ 24/mês com a câmera inclusa</h3>
+                        <a class="btn btn-primary" role="button" href="#">Simule seu plano agora</a>
+                    </div>
+                    </div>
+                </div-->
+            <!--/div>
+        </div--> 
+
+
+
+        <!--div class="container marketing">
+
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Collapsible Group Item #1
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Collapsible Group Item #2
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Collapsible Group Item #3
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE ACCORDION -->
+
+        <!--/div-->
+        <!-- /.container -->
+
+        <!-- FOOTER -->                 
+        <footer class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h5>Para</h5>
+                    <ul class="list-unstyled text-small">
+                      <li><a href="#">Sua casa</a></li>
+                      <li><a href="#">Sua família</a></li>
+                      <li><a href="#">Seu pet</a></li>
+                    </ul>
+                </div>
+                 <div class="col-lg-3">
+                    <h5>Empresa</h5>
+                    <ul class="list-unstyled text-small">
+                      <li><a href="#">Sobre</a></li>
+                      <li><a href="#">Termos de Uso</a></li>
+                      <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5>Atendimento</h5>
+                    <ul class="list-unstyled text-small">
+                      <li><a href="mailto:suporte@camia.com.br">suporte@camia.com.br</a></li>                      
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5>Redes Sociais</h5>
+                    <ul class="list-unstyled text-small">
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row last-footer">
+                <div class="col text-center">
+                    <img src="img/logo-topo.png" height="30">
+                </div>
+            </div>
+        </footer>     
+
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+     <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script-->
+
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+
+</body>
+
 </html>
